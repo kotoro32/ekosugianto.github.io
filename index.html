@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Skor Bola</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Skor Bola</h1>
+        
+        <h2>Input Data Klub</h2>
+        <form id="clubForm">
+            <label for="clubName">Nama Klub:</label>
+            <input type="text" id="clubName" name="clubName" required>
+            <label for="clubName">Kota Club:</label>
+            <input type="text" id="kotaclub" name="kotaclub" required>
+            <button type="submit">Tambah Klub</button>
+        </form>
+        
+        <h2>Input Skor Pertandingan</h2>
+        <form id="matchForm">
+            <label for="homeTeam">Klub Tuan Rumah:</label>
+            <select id="homeTeam" name="homeTeam" required></select>
+            <label for="awayTeam">Klub Tamu:</label>
+            <select id="awayTeam" name="awayTeam" required></select>
+            <label for="homeScore">Skor Tuan Rumah:</label>
+            <input type="number" id="homeScore" name="homeScore" min="0" required>
+            <label for="awayScore">Skor Tamu:</label>
+            <input type="number" id="awayScore" name="awayScore" min="0" required>
+            <button type="submit">Simpan Skor</button>
+        </form>
+        
+        <h2>Klasemen</h2>
+        <center>
+        <div id="standings"></div></center>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
